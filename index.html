@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haichii｜空室写真を、たった数秒で“魅力的な一枚”に</title>
+  <meta name="description" content="【空室期間を最大30%短縮】手間とコストを削減する、不動産のための“魅せる一枚”を作れるサービスです。まずは無料で体験。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- 背景 -->
+  <div class="bg-blob blob-1" aria-hidden="true"></div>
+  <div class="bg-blob blob-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ===============================
+     HEADER（左右いっぱい配置）
+================================ -->
+<header class="header header--wide">
+  <div class="header__inner container--wide">
+    <a class="logo" href="#">
+      <img src="./images/haichii-logo-2.png" alt="Haichii ロゴ" class="logo-img">
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <button class="nav__close" aria-label="メニューを閉じる">×</button>
+      <div class="nav__logo">
+        <img src="images/haichii-logo.png" alt="Haichii" class="nav__logo-img">
+      </div>
+      <div class="nav__content">
+        <a href="#advantages">特徴</a>
+        <a href="#target">活用シーン</a>
+        <a href="#pricing">料金プラン</a>
+        <a href="#faq">よくある質問</a>
+        <div class="nav__actions">
+          <a href="https://haichii.com/login" class="btn btn--outline">ログイン</a>
+          <a href="https://haichii.com/accounts/" class="btn btn--primary">まずは無料トライアル</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <a href="https://haichii.com/login" class="btn btn--outline">ログイン</a>
+      <a href="https://haichii.com/accounts/" class="btn btn--primary">まずは無料トライアル</a>
+    </div>
+    <button class="hamburger" aria-label="メニュー" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===============================
+     HERO（左右2カラム・全幅表示）
+================================ -->
+<section class="hero">
+  <div class="container hero__inner">
+
+    <!-- 左カラム：テキスト -->
+    <div class="hero__left">
+      <p class="hero__eyebrow">AIがインテリアを最適配置</p>
+      <h1 class="hero__title">
+        <span class="line1">あなたの物件を</span><br>
+        <span class="line2">「選びたくなる部屋」に。</span><br>
+      </h1>
+      <p class="hero__desc">
+        Haichiiは、不動産・リフォーム・ホームステージング業者向けに、
+        クリック一つで物件写真に家具を配置できるAIツールです。
+      </p>
+      
+      <!-- PC版用のCTAボタン（説明文の下） -->
+      <div class="hero__ctas hero__ctas--pc">
+        <a href="https://haichii.com/accounts/" class="btn btn--primary btn--lg">
+          まずは無料トライアルで試す
+        </a>
+      </div>
+    </div>
+
+    <!-- 右カラム：Before / After スライダー -->
+    <div class="hero__right">
+      <div class="hero__visual">
+        <!-- ここにビフォーアフター画像スライダー -->
+        <div class="ba">
+          <img src="images/before.png" class="ba__img ba__before" alt="Before">
+          <img src="images/after.png" class="ba__img ba__after" alt="After">
+          <div class="ba__handle"><span></span></div>
+          <div class="ba__hint">スライド</div>
+        </div>
+        <p class="caption">同じ部屋でも、見せ方で印象はここまで変わります。</p>
+      </div>
+    </div>
+
+    <!-- スマホ版用のCTAボタン（スライダーの下） -->
+    <div class="hero__ctas hero__ctas--mobile">
+      <a href="https://haichii.com/accounts/" class="btn btn--primary btn--lg">
+        まずは無料トライアルで試す
+      </a>
+    </div>
+
+  </div>
+</section>
+  <!-- =========================================
+       EDITABLE: 第2ブロック
+  ========================================== -->
+  <section class="results">
+    <div class="container">
+  
+      <!-- ← タイトルを2行構成に -->
+      <h2 class="results__title">
+        <span>家具配置AIの導入で</span>
+        <span><span class="highlight">成果が続々と出ています</span></span>
+      </h2>
+  
+      <!-- ボックス群 -->
+      <div class="results__grid">
+        <div class="result-card reveal">
+          <div class="metric">販売スピード</div>
+          <div class="icon icon--speed"></div>
+          <div class="value">最大30％向上</div>
+        </div>
+  
+        <div class="result-card reveal">
+          <div class="metric">販売価格</div>
+          <div class="icon icon--price"></div>
+          <div class="value">最大10％アップ</div>
+        </div>
+  
+        <div class="result-card reveal">
+          <div class="metric">空室期間</div>
+          <div class="icon icon--vacancy"></div>
+          <div class="value">最大30％短縮</div>
+        </div>
+  
+        <div class="result-card reveal">
+          <div class="metric">反響率</div>
+          <div class="icon icon--lead"></div>
+          <div class="value">1.5倍UPの実績</div>
+        </div>
+      </div>
+
+      <!-- スマホ版スライダー -->
+      <div class="results__slider">
+        <div class="slider__container">
+          <div class="slider__track" id="results-slider-track">
+            <div class="result-card">
+              <div class="metric">販売スピード</div>
+              <div class="icon icon--speed"></div>
+              <div class="value">最大30％向上</div>
+              <div class="card-caption">家具配置AIの導入で販売スピードが大幅に向上</div>
+            </div>
+    
+            <div class="result-card">
+              <div class="metric">販売価格</div>
+              <div class="icon icon--price"></div>
+              <div class="value">最大10％アップ</div>
+              <div class="card-caption">魅力的な画像で物件価値を最大10％向上</div>
+            </div>
+    
+            <div class="result-card">
+              <div class="metric">空室期間</div>
+              <div class="icon icon--vacancy"></div>
+              <div class="value">最大30％短縮</div>
+              <div class="card-caption">空室期間を最大30％短縮し、収益性を向上</div>
+            </div>
+    
+            <div class="result-card">
+              <div class="metric">反響率</div>
+              <div class="icon icon--lead"></div>
+              <div class="value">1.5倍UPの実績</div>
+              <div class="card-caption">問い合わせ率が1.5倍に向上する実績</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- スライダーナビゲーション -->
+        <div class="slider__nav">
+          <button class="slider__btn slider__btn--prev" id="results-prev">‹</button>
+          <div class="slider__dots" id="results-dots"></div>
+          <button class="slider__btn slider__btn--next" id="results-next">›</button>
+        </div>
+      </div>
+  
+      <p class="results__note">
+        ※米不動産協会（NAR）調査など、海外および国内導入データに基づく
+      </p>
+    </div>
+  </section>
+  
+
+
+
+  <!-- =========================================
+       EDITABLE: 第2ブロック（不動産業者の抱える課題と共感）
+       目的: 悩みに共感し関心を高める
+  ========================================== -->
+  <section class="pains-section" id="reason">
+    <div class="container">
+      <h2 class="pains-title">こんなお悩みありませんか？</h2>
+  
+      <div class="pains-grid">
+        <!-- 1 -->
+        <div class="pain-card reveal">
+          <div class="pain-illu">
+            <img src="images/nayami1.png" alt="空室期間が長くて困っている">
+          </div>
+          <p class="pain-copy">1. 空室期間が長くて困っている。</p>
+        </div>
+  
+        <!-- 2 -->
+        <div class="pain-card reveal">
+          <div class="pain-illu">
+            <img src="images/nayami2.png" alt="ステージングコストが高く導入できない">
+          </div>
+          <p class="pain-copy">2. ステージングコストが高く、<br>全物件に導入できない。</p>
+        </div>
+  
+        <!-- 3 -->
+        <div class="pain-card reveal">
+          <div class="pain-illu">
+            <img src="images/nayami3.png" alt="物件の魅力が伝わらずスルーされる">
+          </div>
+          <p class="pain-copy">3. 物件の魅力が伝わらずに<br>スルーされてしまう。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- =========================================
+       解決策セクション
+  ========================================== -->
+  <section class="solution-section" id="advantages">
+    <div class="container">
+      <!-- メインメッセージ -->
+      <div class="solution__header">
+        <div class="solution__icon">
+          <img src="images/yajirusi.png" alt="矢印アイコン" class="solution__arrow">
+        </div>
+        <h2 class="solution__title">
+          <span>Haichiiはその全てを</span><br>
+          <span class="solution__highlight-red">たった数秒で解決</span><span>します！</span>
+        </h2>
+        <h2 class="solution__main-title">Haichiiの特徴</h2>
+        <p class="solution__subtitle">他社サービスではなく、Haichiiが選ばれる理由。</p>
+      </div>
+      
+      <!-- 特徴セクション（交互レイアウト） -->
+      <div class="features-alternating">
+        <!-- 特徴1: 左画像・右テキスト -->
+        <div class="feature-row feature-row--image-left reveal">
+          <div class="feature-row__image">
+            <img src="images/living.png" alt="AIが自動で売れる配置を提案するサンプル画像">
+          </div>
+          <div class="feature-row__content">
+            <div class="feature-number">1</div>
+            <h3>AIが自動で"売れる配置"を提案</h3>
+            <p>購買心理学と空間デザイン理論の知見をもとに設計されたAIが、“人が惹かれる見せ方”を自動でレイアウト。視線の流れや空間バランスまで最適化し、思わず内見したくなる写真を生み出します。</p>
+          </div>
+        </div>
+
+        <!-- 特徴2: 左テキスト・右画像 -->
+        <div class="feature-row feature-row--image-right reveal">
+          <div class="feature-row__content">
+            <div class="feature-number">2</div>
+            <h3>数分でリアルな完成画像に</h3>
+            <p>元の空室写真を崩さず、家具や照明・小物を自然に配置。AIが影の落ち方や奥行きを自動で調整することで、実際の空間になじむリアルな仕上がりに。自然光の差し込みなど“存在しない演出”は行わず、物件本来の魅力を正確に伝えます。</p>
+          </div>
+          <div class="feature-row__image">
+            <img src="images/living2.png" alt="数秒でリアルな完成画像になるサンプル画像">
+          </div>
+        </div>
+
+        <!-- 特徴3: 左画像・右テキスト -->
+        <div class="feature-row feature-row--image-left reveal">
+          <div class="feature-row__image">
+            <img src="images/living3.png" alt="3つのムダをゼロにするサンプル画像">
+          </div>
+          <div class="feature-row__content">
+            <div class="feature-number">3</div>
+            <h3>"3つのムダ"をゼロにする</h3>
+            <p>・家具レンタル・搬入・撤去 → 不要<br>・カメラマン・デザイナー費用 → 1枚わずか266円で完結<br>・制作にかかる日数 → 数分で反映<br>結果、掲載スピード最速＆反響率UPを実現。</p>
+          </div>
+        </div>
+
+        <!-- 特徴4: 左テキスト・右画像 -->
+        <div class="feature-row feature-row--image-right reveal">
+          <div class="feature-row__content">
+            <div class="feature-number">4</div>
+            <h3>テイスト変更もワンクリック</h3>
+            <p>モダン、北欧、高級、ナチュラルなど、複数テイストを瞬時に切り替え可能。キッチン・リビング・寝室など、部屋ごとにスタイルを変更できるから、物件のターゲット層に合わせた「最適な雰囲気づくり」が思いのまま。</p>
+          </div>
+          <div class="feature-row__image">
+            <img src="images/variety-style.png" alt="テイスト変更もワンクリックのサンプル画像">
+          </div>
+        </div>
+
+        <!-- 特徴5: 左画像・右テキスト -->
+        <div class="feature-row feature-row--image-left reveal">
+          <div class="feature-row__image">
+            <img src="images/commercial-use.png" alt="ブランドロゴ・販促要素も挿入OKのサンプル画像">
+          </div>
+          <div class="feature-row__content">
+            <div class="feature-number">5</div>
+            <h3>ブランドロゴも自動で挿入OK</h3>
+            <p>不動産会社や仲介店舗のロゴを登録しておけば、生成した画像に自動で反映されます。ロゴをキャッチコピー代わりに使うことで、SNS投稿やチラシ素材としても活用可能です。</p>
+          </div>
+        </div>
+
+        <!-- 特徴6: 左テキスト・右画像 -->
+        <div class="feature-row feature-row--image-right reveal">
+          <div class="feature-row__content">
+            <div class="feature-number">6</div>
+            <h3>SNS発信にもすぐ使える！</h3>
+            <p>生成した画像はそのままSNS投稿や広告バナーに利用OK。Instagram・LINE VOOM・Xなどでの集客にも直結。「物件の魅力」を伝えるビジュアルを、AIが瞬時に量産します。</p>
+          </div>
+          <div class="feature-row__image">
+            <img src="images/syuukyaku.png" alt="SNS発信にもすぐ使えるサンプル画像">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       CTAボタンセクション
+  ========================================== -->
+  <section class="features-cta-section">
+    <div class="container">
+      <div class="features-cta">
+        <h3 class="features-cta__title">まずは無料でお試しください！</h3>
+        <p class="features-cta__text">登録後すぐに、“実際の空間に馴染む自然なレイアウト”を作成できます。</p>
+        <a href="https://haichii.com/accounts/" class="features-cta__button">ユーザー登録をして無料トライアルを始める</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       ターゲットセクション
+  ========================================== -->
+  <section class="target-section" id="target">
+    <div class="container">
+      <div class="target-header">
+        <p class="target-eyebrow">＼住宅・不動産に携わる皆さまへ／</p>
+        <h2>多様なシーンの<span class="target-highlight">"反響づくり"</span>に<br>お役立ていただけます</h2>
+        <p class="target-description">賃貸仲介業者様、不動産オーナー様、フォトグラファー様、インテリアコーディネーター様など、目的とターゲットに合わせて最適な空間イメージを生成し、意思決定を前倒しします。</p>
+      </div>
+
+      <div class="target-grid">
+        <div class="target-item reveal">
+          <h3>不動産仲介業者様</h3>
+          <div class="target-item__image">
+            <img src="images/living.png" alt="不動産仲介業者様向けイメージ">
+          </div>
+          <h4>掲載初動のCTRと問い合わせ率を改善</h4>
+          <p>新規掲載物件の初動期間は反響を左右する重要なタイミング。Haichiiで生成したAIレイアウト画像を使えば、視覚的に印象の残る物件紹介が可能になり、ポータルサイト上でのクリック率と問い合わせ率が大幅にアップ。初週から内覧予約が入りやすくなり、空室期間の短縮につながります。</p>
+        </div>
+
+        <div class="target-item reveal">
+          <h3>物件オーナー様</h3>
+          <div class="target-item__image">
+            <img src="images/living2.png" alt="物件オーナー様向けイメージ">
+          </div>
+          <h4>ポータルやHPで差別化し、空室を早期成約へ</h4>
+          <p>自社の管理物件をより魅力的に見せたいオーナー様に。家具付きで生活イメージを伝えることで、実際の居住を想像しやすくなり、比較検討の段階で"第一候補"として選ばれやすくなります。結果として、空室期間の短縮や広告費の最適化にも寄与します。</p>
+        </div>
+
+        <div class="target-item reveal">
+          <h3>SNS運用・集客担当者様</h3>
+          <div class="target-item__image">
+            <img src="images/living3.png" alt="SNS運用・集客担当者様向けイメージ">
+          </div>
+          <h4>映える内観で保存・シェアを促進</h4>
+          <p>SNS投稿における"1枚目のインパクト"はクリック率を決定づけます。Haichiiで生成したビジュアルは、ブランドの世界観を保ちつつ高品質。投稿の保存率・シェア率を押し上げ、フォロワーの増加やサイトへの流入促進に効果的です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       家具配置AIの実績
+  ========================================== -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <div class="achievements-header">
+        <h2>家具配置AIの導入により、<br>反響率と成約スピードが大幅に向上</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-item reveal">
+          <div class="achievement-number">30%</div>
+          <h3>空室期間を最大30％短縮</h3>
+          <p>魅力的な画像が内見・成約までの意思決定を早め、空室期間の長期化という課題を根本から解消します。</p>
+        </div>
+
+        <div class="achievement-item reveal">
+          <div class="achievement-number">1.5倍</div>
+          <h3>反響率が平均1.5倍に向上</h3>
+          <p>ポータルサイト上でのクリック率・問い合わせ率が大幅改善。競合物件との差別化を実現します。</p>
+        </div>
+
+        <div class="achievement-item reveal">
+          <div class="achievement-number">10%</div>
+          <h3>販売価格の価値を最大10％向上</h3>
+          <p>AIステージング効果により、より高価格での成約事例が報告されています。</p>
+        </div>
+      </div>
+
+      <div class="achievements-note">
+        <p>※上記の数値は、米国不動産協会（NAR）調査など、海外におけるバーチャルステージング手法全体の効果に基づいています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       EDITABLE: 第5ブロック（料金プランと安心の保証）
+       目的: リスクゼロ訴求＋料金表
+  ========================================== -->
+  <section id="pricing" class="section section--pricing">
+    <div class="container">
+      <div class="section__head">
+        <h2>料金プラン</h2>
+        <p class="muted">まずは無料で体験。必要に応じて柔軟に拡張できます。</p>
+        <p class="pricing-note">※Haichiiでは、1トークンで1枚の画像を生成できます。<br>複雑な計算や制限は一切なし。必要な枚数分だけ、自由にご利用いただけます。</p>
+        <div class="pricing-highlight">
+          <span class="pricing-highlight__icon">🎉</span>
+          <span class="pricing-highlight__text">まずはリスクゼロで！ 無料トライアル実施中！</span>
+        </div>
+      </div>
+
+      <div class="pricing grid-4">
+        <div class="plan card shadow reveal">
+          <h3 class="plan__name">ライトプラン</h3>
+          <p class="plan__price"><span>¥7,980</span><small>/月（税込）</small></p>
+          <p class="plan__note">30枚（1枚あたり ¥266）</p>
+          <ul class="list">
+            <li>すべての部屋タイプ</li>
+            <li>すべての家具スタイル</li>
+            <li>商用利用OK</li>
+            <li>ロゴ自動挿入</li>
+            <li>画像ストレージ付き</li>
+          </ul>
+          <a href="https://haichii.com/accounts/" class="btn btn--primary w-100">まずは無料トライアル</a>
+        </div>
+
+        <div class="plan card shadow reveal">
+          <h3 class="plan__name">スタンダード</h3>
+          <p class="plan__price"><span>¥49,800</span><small>/月（税込）</small></p>
+          <p class="plan__note">200枚（1枚あたり ¥249）</p>
+          <ul class="list">
+            <li>小規模仲介・管理会社向け</li>
+            <li>全スタイル／全タイプ対応</li>
+            <li>商用利用OK</li>
+            <li>ロゴ自動挿入</li>
+            <li>画像ストレージ付き</li>
+          </ul>
+          <a href="https://haichii.com/accounts/" class="btn btn--primary w-100">まずは無料トライアル</a>
+        </div>
+
+        <div class="plan card shadow reveal">
+          <h3 class="plan__name">プロ</h3>
+          <p class="plan__price"><span>ASK</span><small>/月</small></p>
+          <p class="plan__note">500枚〜（柔軟にカスタム対応）</p>
+          <ul class="list">
+            <li>物件数の多い事業者向け</li>
+            <li>全スタイル／全タイプ対応</li>
+            <li>商用利用OK</li>
+            <li>ロゴ自動挿入</li>
+            <li>画像ストレージ付き</li>
+          </ul>
+          <a href="https://s.lmes.jp/landing-qr/2007404893-zAj4D5yb?uLand=nxuZTx" class="btn btn--primary w-100">お問い合わせ</a>
+        </div>
+
+        <div class="plan card shadow reveal accent">
+          <div class="badge">おすすめ</div>
+          <h3 class="plan__name">バズサポートパック</h3>
+          <p class="plan__price"><span>¥198,000</span><small>/月（税込）</small></p>
+          <p class="plan__note">500枚＋SNS運用サポート</p>
+          <ul class="list">
+            <li>全スタイル／全タイプ対応</li>
+            <li>商用利用OK・ロゴ自動挿入</li>
+            <li>画像ストレージ付き</li>
+            <li>SNS運用サポート（戦略×実践）</li>
+            <li>月1回アカウント添削＆改善</li>
+            <li>ショート動画構成サポート</li>
+            <li>LINE公式アカウント自動化対応</li>
+          </ul>
+          <a href="https://haichii.com/accounts/" class="btn btn--primary w-100">まずは無料トライアル</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       掲載までの簡単4ステップ
+  ========================================== -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="steps-header">
+        <h2>掲載までの簡単4ステップ</h2>
+      </div>
+      
+      <div class="steps-timeline">
+        <div class="timeline-line"></div>
+        
+        <div class="step-item reveal">
+          <div class="step-node"></div>
+          <div class="step-number">STEP 01</div>
+          <div class="step-content">
+            <h3>写真をアップロード</h3>
+            <div class="step-icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="step-item reveal">
+          <div class="step-node"></div>
+          <div class="step-number">STEP 02</div>
+          <div class="step-content">
+            <h3>部屋タイプを選択</h3>
+            <div class="step-icon">
+              <i class="fas fa-house"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="step-item reveal">
+          <div class="step-node"></div>
+          <div class="step-number">STEP 03</div>
+          <div class="step-content">
+            <h3>家具スタイルを選択</h3>
+            <div class="step-icon">
+              <i class="fas fa-couch"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="step-item reveal">
+          <div class="step-node"></div>
+          <div class="step-number">STEP 04</div>
+          <div class="step-content">
+            <h3>AIが自動配置 → ダウンロードして即掲載！</h3>
+            <div class="step-icon">
+              <i class="fas fa-wand-magic-sparkles"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- =========================================
+       FAQ セクション
+  ========================================== -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>よくある質問</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item reveal">
+          <summary>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">無料で試すことはできますか？</span>
+            <span class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p>はい。登録後すぐに、1枚無料でお試しいただけます。<br>画像アップロードから家具配置まで、すべての機能を制限なく体験可能です。</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">生成した画像は商用利用できますか？</span>
+            <span class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p>はい、商用利用可能です。<br>ポータルサイトやSNS広告、チラシなどに自由にご利用いただけます。<br>ただし、家具デザインを第三者の商標として転用するなど、誤解を招く用途はご遠慮ください。</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">トークン制とは何ですか？</span>
+            <span class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p>Haichiiは「1トークン＝1枚生成」のシンプルな仕組みです。<br>月額プラン内のトークン数を使い切った場合は、追加購入も可能なので一度お問い合わせください。</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">支払い方法は？</span>
+            <span class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p>クレジットカード決済（Visa / MasterCard / AMEX）に対応しています。<br>※請求書払いには対応しておりません。</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">操作に専門知識は必要ですか？</span>
+            <span class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p>一切必要ありません。<br>画像をアップロードし、部屋タイプと家具スタイルを選ぶだけ。<br>誰でも数分で完成画像を作成できます。</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">生成にどれくらい時間がかかりますか？</span>
+            <span class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p>通常は1枚あたり数分以内で完了します。<br>生成中も他の作業を進めながらお待ちいただけます。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       EDITABLE: 第6ブロック（最終CTA）
+       目的: 最後にもう一度、行動を促す
+  ========================================== -->
+  <section id="signup" class="final-cta-section">
+    <div class="container">
+      <div class="final-cta">
+        <div class="final-cta__badge">無料トライアル</div>
+        <h2 class="final-cta__title">Haichiiが、あなたの物件を<br>「選ばれる一枚」に。</h2>
+        <p class="final-cta__description">＼今すぐ無料で体験してみてください！／</p>
+        
+        <div class="final-cta__button">
+          <a href="https://haichii.com/accounts/" class="btn btn--primary btn--lg">ユーザー登録して無料トライアルを始める</a>
+        </div>
+        
+        <div class="final-cta__features">
+          <span class="feature-tag">カード不要</span>
+          <span class="feature-tag">登録1分</span>
+          <span class="feature-tag">商用OK</span>
+          <span class="feature-tag">メールだけで開始</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ（既存） -->
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo small">
+        <img src="images/haichii-logo.png" alt="Haichii" class="footer-logo" />
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="https://www.notion.so/27e6769baaeb80e7ad60c66044c22019?source=copy_link" target="_blank" rel="noopener noreferrer">利用規約</a>
+        <a href="https://www.notion.so/27e6769baaeb80ae977bf544816c6e9f?source=copy_link" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+        <a href="https://www.notion.so/27e6769baaeb80e78afae147b5f9d36b?source=copy_link" target="_blank" rel="noopener noreferrer">特定商取引法に基づく表記</a>
+      </nav>
+
+      <p class="muted">© <span id="y"></span> Haichii</p>
+    </div>
+  </footer>
+
+  <!-- インラインのBA初期化は撤去。挙動は script.js 側で統一 -->
+  <script src="script.js"></script>
+</body>
+</html>
