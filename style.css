@@ -2640,6 +2640,26 @@ body{
   }
 }
 
-
-
+/* ===== スマホ表示：悩みブロックのイラスト背景修正 ===== */
+@media (max-width: 640px) {
+  /* イラストの青い背景グラデーションを消す */
+  .pain-illu {
+    background: transparent !important; /* 背景グラデーションを削除 */
+    padding: 16px; /* 適度な余白を確保 */
+    margin-bottom: 20px; /* 下余白を調整 */
+  }
+  
+  /* すべてのボックスの画像も同様に調整 */
+  .pain-card:nth-child(1) .pain-illu,
+  .pain-card:nth-child(2) .pain-illu,
+  .pain-card:nth-child(3) .pain-illu {
+    background: transparent !important; /* 背景グラデーションを削除 */
+  }
+  
+  /* 1番目のボックスの画像も同様に調整 */
+  .pain-card:nth-child(1) .pain-illu {
+    padding: 16px; /* 適度な余白を確保 */
+    margin-top: -4px; /* 上余白を少し調整 */
+  }
+}
 
