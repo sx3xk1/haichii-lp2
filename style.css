@@ -1119,6 +1119,12 @@ body{
   .pricing-highlight__icon {
     animation: none; /* アイコンのアニメーションを無効化 */
   }
+  /* 料金プランのrevealアニメーションを無効化 */
+  .section--pricing .plan.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
   .hero__title{ font-size: clamp(26px, 7vw, 34px); margin-bottom:8px }
   .footer__inner{ 
     flex-direction:column; 
