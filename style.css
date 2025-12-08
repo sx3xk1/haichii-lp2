@@ -1077,7 +1077,7 @@ body{
 
 /* Reveal (fade-up) */
 .reveal{ opacity:0; transform:translateY(16px); transition:.6s ease }
-.reveal.is-visible{ opacity:1; transform:none }
+.reveal.is-visible{ opacity:1; transform:translateZ(0) }
 
 /* ---------- Responsive tweaks ---------- */
 @media (max-width:960px){
@@ -1655,6 +1655,13 @@ body{
     white-space: nowrap;
     overflow: visible;
     word-break: keep-all;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 2px 4px;
+    box-sizing: border-box;
   }
   
   .features-alternating .feature-number::before {
@@ -1665,6 +1672,12 @@ body{
   .features-alternating .feature-row__content {
     overflow: visible;
     min-width: auto;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  
+  .features-alternating {
+    overflow: visible;
   }
 }
 
