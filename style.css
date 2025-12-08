@@ -1125,6 +1125,17 @@ body{
     transform: none !important;
     transition: none !important;
   }
+  /* 「特徴」と「掲載までの簡単4ステップ」以外のrevealアニメーションを無効化 */
+  .result-card.reveal,
+  .pain-card.reveal,
+  .target-item.reveal,
+  .achievement-item.reveal,
+  .faq__item.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  /* 特徴セクション（features-alternating）とステップセクション（steps-section）のrevealは残す */
   .hero__title{ font-size: clamp(26px, 7vw, 34px); margin-bottom:8px }
   .footer__inner{ 
     flex-direction:column; 
