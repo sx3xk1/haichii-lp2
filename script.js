@@ -148,6 +148,8 @@
   });
 
   let dragging = false;
+  let touchStartX = 0;
+  let isTouch = false;
 
   const hideHint = () => { 
     if (hint) {
@@ -159,7 +161,42 @@
     }
   };
 
+  // タッチイベント（スマホ最適化）
+  ba.addEventListener('touchstart', (e) => {
+    isTouch = true;
+    dragging = true;
+    const touch = e.touches[0];
+    touchStartX = touch.clientX;
+    setPos(touch.clientX);
+    hideHint();
+    e.preventDefault(); // スクロールを防ぐ
+  }, { passive: false });
+
+  ba.addEventListener('touchmove', (e) => {
+    if (dragging && isTouch) {
+      const touch = e.touches[0];
+      setPos(touch.clientX);
+      e.preventDefault(); // スクロールを防ぐ
+    }
+  }, { passive: false });
+
+  ba.addEventListener('touchend', (e) => {
+    if (isTouch) {
+      dragging = false;
+      isTouch = false;
+    }
+  }, { passive: true });
+
+  ba.addEventListener('touchcancel', (e) => {
+    if (isTouch) {
+      dragging = false;
+      isTouch = false;
+    }
+  }, { passive: true });
+
+  // ポインターイベント（マウス・ペン対応）
   ba.addEventListener('pointerdown', (e) => {
+    if (isTouch) return; // タッチイベントが優先
     dragging = true;
     ba.setPointerCapture && ba.setPointerCapture(e.pointerId);
     setPos(e.clientX);
@@ -167,6 +204,7 @@
   });
 
   ba.addEventListener('pointermove', (e) => {
+    if (isTouch) return; // タッチイベントが優先
     if (dragging) {
       setPos(e.clientX);
     } else if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
@@ -175,12 +213,20 @@
     }
   });
 
-  const stopDrag = () => { dragging = false; };
+  const stopDrag = () => { 
+    if (!isTouch) {
+      dragging = false;
+    }
+  };
   ba.addEventListener('pointerup', stopDrag);
   ba.addEventListener('pointercancel', stopDrag);
 
-  // クリックでジャンプ
-  ba.addEventListener('click', (e) => { setPos(e.clientX); hideHint(); });
+  // クリックでジャンプ（タッチイベントの後に処理）
+  ba.addEventListener('click', (e) => {
+    if (isTouch) return; // タッチイベントの場合はクリックを無視
+    setPos(e.clientX); 
+    hideHint(); 
+  });
 
   // キーボード操作 ← → / Home / End
   ba.addEventListener('keydown', (e) => {
